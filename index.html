@@ -462,18 +462,23 @@
           <p>Leave your contacts and we will call you back</p>
           <label class="modal-form-field">
             <span class="modal-form-input-desc">Name</span>
+            <span class="modal-form-input-wrapper">
             <input type="text"
-            class="contact-form-input"
+            class="modal-form-input"
             placeholder=""
             name="user-name"
             required
             pattern="^[a-zA-Zа-яА-Я]+"
             minlength="2"/>
+            <svg class="modal-form-input-icon" width="18" height="18">
+            <use href="./images/sprite4.svg#icon-person-modal"></use>
+            </svg>
+          </span>
           </label>
           <label class="modal-form-field">
             <span class="modal-form-input-desc">Phone</span>
             <input type="tel"
-            class="contact-form-input"
+            class="modal-form-input"
             placeholder=""
             name="user-phone"
             required
@@ -483,7 +488,7 @@
           <label class="modal-form-field">
             <span class="modal-form-input-desc">Email</span>
             <input type="email"
-            class="contact-form-input"
+            class="modal-form-input"
             placeholder=""
             name="user-email"
             required/>
