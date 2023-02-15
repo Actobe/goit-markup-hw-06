@@ -450,26 +450,39 @@
           </ul>
         </div>
       
-      <div class="subscribe-footer">
-      <form class="modal-form-subscribe">
-          <p class="subscribe">Subscribe</p>
-          <label class="modal-form-subscribe">
-            <input type="email"
-            class="modal-form-input-subscribe"
-            placeholder="E-mail"
-            name="user-mail"
-            required/>
-          </label>
-          <button type="submit"
-          class="modal-form-subscribe">Subscribe</button>
-        </form>
+<div class="footer-main-subscribe">
+            <div>
+              <p class="footer-subscribe">Subscribe</p>
+              <form class="modal-subscribe">
+                <label>
+                  <input
+                    class="online-input"
+                    type="email"
+                    name="user-subscribe"
+                    placeholder="E-mail"
+                  />
+                </label>
+                <div class="subscribe-push">
+                  <button class="subscribe-button" type="submit">
+                    Subscribe
+                    <svg class="subscribe-pic" width="24" height="20">
+                      <use
+                        href="./images/icon-send.svg#icon-icon-send"
+                      ></use>
+                    </svg>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop " data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
-          <svg class="modal-close-icon" width="18" height="18">
-            <use href="./images/sprite 3.svg#close-icon"></use>
+          <svg class="modal-close-icon" width="8" height="8">
+            <use href="./images/close-cross.svg#close-cross"></use>
           </svg>
         </button>
         <form class="modal-form">
@@ -523,6 +536,7 @@
             name="user-message"
             placeholder ="Text input"></textarea>
           </label>
+
           <input id="user-policy" type="checkbox"
           class="modal-form-check visually-hidden" name="user-policy">
           <label for="user-policy" class="modal-form-check-desc"
@@ -532,6 +546,7 @@
           <button type="submit"
           class="modal-form-submit">Send</button>
         </form>
+      
       </div>
     </div>
     <script src="./js/modal.js"></script>
